@@ -1,4 +1,4 @@
-package com.kinses38.schemaregbootcamp;
+package com.kinses38.exercise1;
 
 import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
@@ -24,7 +24,7 @@ public class CoreApplication implements CommandLineRunner {
 	}
 
 	@Override
-	public void run(String [] args) throws InterruptedException {
+	public void run(String [] args) {
 		sendMessages();
 	}
 
