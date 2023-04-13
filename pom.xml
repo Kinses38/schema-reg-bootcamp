@@ -16,6 +16,7 @@
     <description>schemaregbootcamp</description>
     <modules>
         <module>exercise1-simple-kafka</module>
+        <module>exercise2-schema-reg</module>
     </modules>
     <properties>
         <java.version>17</java.version>

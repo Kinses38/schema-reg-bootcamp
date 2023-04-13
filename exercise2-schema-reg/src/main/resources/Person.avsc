@@ -1,0 +1,19 @@
+//I exist because Json is a nightmare to work with. Build me by using the maven plugin, maven => plugins => avro => avro:schema and I'll generate a class for you
+{
+  "type": "record",
+  "name": "Person",
+  "namespace": "com.kinses38.schema",
+  "fields": [
+    {
+      "name": "name",
+      "type": "string"
+    },
+    {
+      "name": "age",
+      "type": "int"
+    },
+    {
+        "name": "bloodtype",
+        "type": "string"
+    }]
+}
