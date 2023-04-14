@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+package storeTransaction;
+
+option java_multiple_files = true;
+option java_package = "com.kinses38.exercise3";
+option java_outer_classname = "StoreTransactionOuterClass";
+
+message StoreTransaction {
+  string storeName = 1;
+  int64 date = 2;
+  oneof payload  {
+    InStore in_store = 4;
+    PreOrder pre_order = 5;
+  }
+}
+
+//Im kinda cheating here because they're all in the same protobuf "class"
+message InStore {
+  int64 transID = 1;
+  int64 total = 2;
+  repeated string items = 3; //repeated: zero or many
+}
+
+message PreOrder {
+  int64 orderID = 1;
+  int64 total = 2;
+  repeated string items = 3;
+  bool paid = 4;
+}
